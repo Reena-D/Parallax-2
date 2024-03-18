@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Light</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <audio controls autoplay>
+        <source src="Thoogu-Manchadalli-Koothu.mp3">
+    </audio> 
+    <p id="song">
+        ತೂಗು ಮಂಚದಲ್ಲಿ ಕೂತು ಮೇಘ ಶ್ಯಾಮ ರಾಧೆಗಾತು<br>
+
+ಆಡುತಿಹನು ಏನೋ ಮಾತು ‌‌<br>
+
+ರಾಧೆ ನಾಚುತಿದ್ದಳು<br>
+
+ಸೆರಗ ಬೆರಳಿನಲ್ಲಿ ಸುತ್ತಿ<br>
+
+ಜಡೆಯ ತುದಿಯ ಕೆನ್ನೆಗೊತ್ತಿ<br>
+
+ಜುಮ್ಮುಗುಡುವ ಮುಖವನೆತ್ತಿ<br>
+
+ಕಣ್ಣಮುಚ್ಚುತಿದ್ದಳು<br>
+
+ತೂಗು ಮಂಚದಲ್ಲಿ ಕೂತು…<br>
+
+ಮುಖವ ಎದೆಯ ನಡುವೆ ಒತ್ತಿ<br>
+
+ತೋಳಿನಿಂದ ಕೊರಳ ಸುತ್ತಿ<br>
+
+ತುಟಿಯು ತೀಡಿ ಬೆಂಕಿ ಹೊತ್ತಿ ಅಮ್ಮನುಸಿರ ಬಿಟ್ಟಳೂ<br>
+
+ಸೆರಗು ಜಾರುತಿರಲು ಕೆಳಗೆ<br>
+
+ಬಾನು ಭೂಮಿ ಮೇಲು ಕೆಳಗೆ<br>
+
+ಅದುರುತಿರುವ ಅದರಗಳಿಗೆ ಬೆಳ್ಳಿ ಹಾಲ ಬಟ್ಟಲು<br>
+
+ತೂಗು ಮಂಚದಲ್ಲಿ ಕೂತು…..
+    </p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="english">
+        thugu manchadalli koothu<br>
+megha shyama raadhe gaathu<br>
+aaduthihanu eno maathu<br>
+radhe naachuthiddalu
+<br>
+seraga beralinalli suthi<br>
+jadeya thudiya kennegothi<br>
+jummuguduva mukhavanethi<br>
+kannu muchuthiddalu
+
+<br>
+
+thugu manchadalli koothu
+<br>
+mukhava edeya naduve othi<br>
+tholininda korala suthi<br>
+thutiyu theedi benki hothi<br>
+ammanusira bittalu<br>
+seragu jaaruthiralu kelage<br>
+baanu bhoomi melu kelage<br>
+adharuthiruva adharagalige<br>
+belli haala battalu
+
+<br>
+thugu manchadalli koothu....
+    </p>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener("scroll", function() {
+            var value = window.scrollY
+
+            bg.style.top = value * 0.5 + "px";
+            moon.style.left = -value * 0.5 + "px";
+            mountain.style.top = -value * 0.15 + "px";
+            road.style.top = value * 0.15 + "px";
+            text.style.top = value * 1 + "px";
+        })
+    </script>
+</body>
+</html>
